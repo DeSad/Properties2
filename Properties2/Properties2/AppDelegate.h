@@ -15,7 +15,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 
-@property (strong, nonatomic) Object *object;
+@property (copy, nonatomic) Object *object;
 
 @end
 

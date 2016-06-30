@@ -27,7 +27,9 @@
 }
 
 -(void)testObject{
-    Object *object = [[Object alloc] init];
+    Object *obj = [[Object alloc] init];
+    
+    self.object = obj;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

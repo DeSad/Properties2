@@ -10,8 +10,23 @@
 
 @implementation Object
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"object is creared");
+    }
+    return self;
+}
+
 -(void)dealloc{
     NSLog(@"object is dealocated");
+}
+
+-(id)copyWithZone:(NSZone *)zone{
+    Object *newObject = [[Object alloc] init];
+    newObject.name = self.name;
+    return newObject;
 }
 
 @end
